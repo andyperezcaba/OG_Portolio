@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    background-color: #212121;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.container1 {
+    background-color: #473048;
+    border: #978a5a 5px solid;
+    width: 955px;
+    height: 540px;
+    margin: auto;
+    box-shadow: black 10px 10px;
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+
+hero > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    color: #ba705c;
+    font-size: 10px;
+    font-style: italic;
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    justify-content: center;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+nav > ul > li > a:hover {
+    color: #ebc789;
+}
+
+nav > ul > li > a {
+    position: relative;
+    top: 15px;
+    color: #cea96b;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+links > a > img {
+    object-fit: cover;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+links {
+    display: flex;
+    justify-content: center;
+    animation-fill-mode: forwards;
+    animation: fadeInDown;
+    animation-duration: 2s;
+    
+}
+
+@media only screen and (max-width: 550px) {
+    .container1 {
+        width: 100%;
+        box-shadow: none;
+        font-size: 15px;
+    }
+}
